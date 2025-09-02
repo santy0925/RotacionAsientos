@@ -12,28 +12,27 @@
 
     <div class="controls">
       <input type="text" id="personName" placeholder="Nombre de la persona">
+      <input type="text" id="teamName" placeholder="Nombre del equipo">
       
       <select id="seatType" onchange="toggleFixedOptions()">
         <option value="fixed">Fijo</option>
         <option value="rotating">Rotativo</option>
       </select>
 
-      <div id="fixedOptions">
-        <input type="number" id="fixedInput" placeholder="Número de asiento" min="1">
-      </div>
+      <div id="fixedOptions"></div>
 
-      <button class="btn" onclick="addPerson()">Agregar Persona</button>
+      <button onclick="addPerson()">Agregar Persona</button>
     </div>
 
     <div class="config">
       <label for="numRotativos">Cantidad de rotativos:</label>
       <input type="number" id="numRotativos" value="5" min="1">
-      <button class="btn" onclick="setRotativos()">Actualizar rotativos</button>
+      <button onclick="setRotativos()">Actualizar rotativos</button>
     </div>
 
     <div class="actions">
-      <button class="btn" onclick="rotateSeats()">🔄 Rotar asientos</button>
-      <button class="btn danger" onclick="clearAllSeats()">🗑️ Borrar todos</button>
+      <button onclick="rotateSeats()">🔄 Rotar asientos</button>
+      <button onclick="clearAllSeats()">🗑️ Borrar todos</button>
     </div>
 
     <h2>Asientos Fijos</h2>
